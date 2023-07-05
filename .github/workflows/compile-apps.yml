@@ -19,11 +19,11 @@ jobs:
 
     - name: Compile
       id: compile
-      run: make compile >> $GITHUB_OUTPUT
+      run: make compile >> "$GITHUB_OUTPUT"
 
     - name: Test
       id: test
-      run: make test >> $GITHUB_OUTPUT
+      run: make test >> "$GITHUB_OUTPUT"
 
       - uses: actions/github-script@v6
         with:
